@@ -14,7 +14,7 @@ RUN mvn clean install
 
 FROM openjdk:17-jdk-slim
 
-EXPOSE 8080
+EXPOSE 8070
 
 COPY --from=build /target/*.jar app.jar
 
